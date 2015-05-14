@@ -13,6 +13,13 @@
 		841156661B00E9FD00A73472 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841156651B00E9FD00A73472 /* Images.xcassets */; };
 		841156691B00E9FD00A73472 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841156671B00E9FD00A73472 /* LaunchScreen.xib */; };
 		841156751B00E9FD00A73472 /* carouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841156741B00E9FD00A73472 /* carouselTests.swift */; };
+		842013191B0114C80072C79F /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842013181B0114C80072C79F /* Common.swift */; };
+		8425286F1B01C7AA004CE446 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8425286E1B01C7AA004CE446 /* IntroViewController.swift */; };
+		842528711B028812004CE446 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842528701B028812004CE446 /* SignInViewController.swift */; };
+		842528731B029416004CE446 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842528721B029416004CE446 /* TutorialViewController.swift */; };
+		84EC25EF1B05172C0019A036 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC25EE1B05172C0019A036 /* FeedViewController.swift */; };
+		84EC25F11B051D0B0019A036 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC25F01B051D0B0019A036 /* SettingsViewController.swift */; };
+		84EC25F31B051E460019A036 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC25F21B051E460019A036 /* ConversationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		8411566E1B00E9FD00A73472 /* carouselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carouselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841156731B00E9FD00A73472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841156741B00E9FD00A73472 /* carouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carouselTests.swift; sourceTree = "<group>"; };
+		842013181B0114C80072C79F /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../Common.swift; sourceTree = "<group>"; };
+		8425286E1B01C7AA004CE446 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		842528701B028812004CE446 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		842528721B029416004CE446 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		84EC25EE1B05172C0019A036 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		84EC25F01B051D0B0019A036 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		84EC25F21B051E460019A036 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +73,7 @@
 		841156501B00E9FD00A73472 = {
 			isa = PBXGroup;
 			children = (
+				84EC25EE1B05172C0019A036 /* FeedViewController.swift */,
 				8411565B1B00E9FD00A73472 /* carousel */,
 				841156711B00E9FD00A73472 /* carouselTests */,
 				8411565A1B00E9FD00A73472 /* Products */,
@@ -77,9 +92,15 @@
 		8411565B1B00E9FD00A73472 /* carousel */ = {
 			isa = PBXGroup;
 			children = (
+				842013181B0114C80072C79F /* Common.swift */,
 				8411565E1B00E9FD00A73472 /* AppDelegate.swift */,
 				841156601B00E9FD00A73472 /* ViewController.swift */,
 				841156621B00E9FD00A73472 /* Main.storyboard */,
+				84EC25F21B051E460019A036 /* ConversationsViewController.swift */,
+				84EC25F01B051D0B0019A036 /* SettingsViewController.swift */,
+				842528721B029416004CE446 /* TutorialViewController.swift */,
+				842528701B028812004CE446 /* SignInViewController.swift */,
+				8425286E1B01C7AA004CE446 /* IntroViewController.swift */,
 				841156651B00E9FD00A73472 /* Images.xcassets */,
 				841156671B00E9FD00A73472 /* LaunchScreen.xib */,
 				8411565C1B00E9FD00A73472 /* Supporting Files */,
@@ -213,7 +234,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				841156611B00E9FD00A73472 /* ViewController.swift in Sources */,
+				842013191B0114C80072C79F /* Common.swift in Sources */,
 				8411565F1B00E9FD00A73472 /* AppDelegate.swift in Sources */,
+				842528711B028812004CE446 /* SignInViewController.swift in Sources */,
+				842528731B029416004CE446 /* TutorialViewController.swift in Sources */,
+				8425286F1B01C7AA004CE446 /* IntroViewController.swift in Sources */,
+				84EC25F31B051E460019A036 /* ConversationsViewController.swift in Sources */,
+				84EC25EF1B05172C0019A036 /* FeedViewController.swift in Sources */,
+				84EC25F11B051D0B0019A036 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = carousel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = carousel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +439,7 @@
 				8411567A1B00E9FD00A73472 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8411567B1B00E9FD00A73472 /* Build configuration list for PBXNativeTarget "carouselTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +448,7 @@
 				8411567D1B00E9FD00A73472 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
