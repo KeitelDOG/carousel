@@ -1,18 +1,18 @@
 //
-//  ConversationsViewController.swift
+//  GetStartedViewController.swift
 //  carousel
 //
-//  Created by Jules Walter on 5/14/15.
+//  Created by Jules Walter on 5/16/15.
 //  Copyright (c) 2015 Jules Walter. All rights reserved.
 //
 
 import UIKit
 
-class ConversationsViewController: UIViewController {
+class GetStartedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        var defaults : NSUserDefaults = NSUserDefaults.standardUserDefaults()
         // Do any additional setup after loading the view.
     }
 
@@ -21,9 +21,8 @@ class ConversationsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func goBack(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)
+    @IBAction func didDismiss(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
 

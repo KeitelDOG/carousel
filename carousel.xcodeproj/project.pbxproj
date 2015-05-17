@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84049FC51B07D66C00D84848 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84049FC41B07D66C00D84848 /* TermsViewController.swift */; };
+		84049FC71B07ECC700D84848 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84049FC61B07ECC700D84848 /* GetStartedViewController.swift */; };
 		8411565F1B00E9FD00A73472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411565E1B00E9FD00A73472 /* AppDelegate.swift */; };
 		841156611B00E9FD00A73472 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841156601B00E9FD00A73472 /* ViewController.swift */; };
 		841156641B00E9FD00A73472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841156621B00E9FD00A73472 /* Main.storyboard */; };
@@ -17,6 +19,7 @@
 		8425286F1B01C7AA004CE446 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8425286E1B01C7AA004CE446 /* IntroViewController.swift */; };
 		842528711B028812004CE446 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842528701B028812004CE446 /* SignInViewController.swift */; };
 		842528731B029416004CE446 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842528721B029416004CE446 /* TutorialViewController.swift */; };
+		84381FBE1B05B5F700A26198 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84381FBD1B05B5F700A26198 /* CreateAccountViewController.swift */; };
 		84EC25EF1B05172C0019A036 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC25EE1B05172C0019A036 /* FeedViewController.swift */; };
 		84EC25F11B051D0B0019A036 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC25F01B051D0B0019A036 /* SettingsViewController.swift */; };
 		84EC25F31B051E460019A036 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC25F21B051E460019A036 /* ConversationsViewController.swift */; };
@@ -33,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84049FC41B07D66C00D84848 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		84049FC61B07ECC700D84848 /* GetStartedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
 		841156591B00E9FD00A73472 /* carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8411565D1B00E9FD00A73472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8411565E1B00E9FD00A73472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +52,8 @@
 		8425286E1B01C7AA004CE446 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		842528701B028812004CE446 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		842528721B029416004CE446 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
-		84EC25EE1B05172C0019A036 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		84381FBD1B05B5F700A26198 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		84EC25EE1B05172C0019A036 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = ../FeedViewController.swift; sourceTree = "<group>"; };
 		84EC25F01B051D0B0019A036 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		84EC25F21B051E460019A036 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,7 +79,6 @@
 		841156501B00E9FD00A73472 = {
 			isa = PBXGroup;
 			children = (
-				84EC25EE1B05172C0019A036 /* FeedViewController.swift */,
 				8411565B1B00E9FD00A73472 /* carousel */,
 				841156711B00E9FD00A73472 /* carouselTests */,
 				8411565A1B00E9FD00A73472 /* Products */,
@@ -92,10 +97,14 @@
 		8411565B1B00E9FD00A73472 /* carousel */ = {
 			isa = PBXGroup;
 			children = (
+				84EC25EE1B05172C0019A036 /* FeedViewController.swift */,
 				842013181B0114C80072C79F /* Common.swift */,
 				8411565E1B00E9FD00A73472 /* AppDelegate.swift */,
 				841156601B00E9FD00A73472 /* ViewController.swift */,
 				841156621B00E9FD00A73472 /* Main.storyboard */,
+				84049FC61B07ECC700D84848 /* GetStartedViewController.swift */,
+				84049FC41B07D66C00D84848 /* TermsViewController.swift */,
+				84381FBD1B05B5F700A26198 /* CreateAccountViewController.swift */,
 				84EC25F21B051E460019A036 /* ConversationsViewController.swift */,
 				84EC25F01B051D0B0019A036 /* SettingsViewController.swift */,
 				842528721B029416004CE446 /* TutorialViewController.swift */,
@@ -233,7 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84049FC51B07D66C00D84848 /* TermsViewController.swift in Sources */,
+				84381FBE1B05B5F700A26198 /* CreateAccountViewController.swift in Sources */,
 				841156611B00E9FD00A73472 /* ViewController.swift in Sources */,
+				84049FC71B07ECC700D84848 /* GetStartedViewController.swift in Sources */,
 				842013191B0114C80072C79F /* Common.swift in Sources */,
 				8411565F1B00E9FD00A73472 /* AppDelegate.swift in Sources */,
 				842528711B028812004CE446 /* SignInViewController.swift in Sources */,

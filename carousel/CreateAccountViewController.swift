@@ -1,50 +1,40 @@
 //
-//  SignInViewController.swift
+//  CreateAccountViewController.swift
 //  carousel
 //
-//  Created by Jules Walter on 5/12/15.
+//  Created by Jules Walter on 5/14/15.
 //  Copyright (c) 2015 Jules Walter. All rights reserved.
 //
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class CreateAccountViewController: UIViewController {
 
-    @IBOutlet weak var emailField: UITextField!
-    
-    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var loginTextView: UIImageView!
     
     @IBOutlet weak var bottomView: UIView!
     
     @IBOutlet weak var topView: UIView!
     
-    @IBOutlet weak var loginText: UIImageView!
-    
-    @IBOutlet weak var navBarView: UIImageView!
-    
-    @IBOutlet weak var scrollView: UIScrollView!
-    
+    @IBOutlet weak var termsButton: UIButton!
     
     var topViewCenter: CGPoint!
+    
     var bottomViewCenter: CGPoint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+    
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
         
         topViewCenter = topView.center
         bottomViewCenter = bottomView.center
-        
-        scrollView.contentSize = CGSize(width: 320, height: 568)
-        topView.transform = CGAffineTransformScale(topView.transform, 0.5, 0.5)
-        
-        delay(0.3,
-            {self.topView.transform = CGAffineTransformScale(self.topView.transform, 2, 2)})
+    
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,8 +42,8 @@ class SignInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func didPressBackButton(sender: AnyObject) {
-        dismissViewControllerAnimated(false, completion: nil)
+    @IBAction func onTap(sender: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
     
     func keyboardWillHide(notification: NSNotification!) {
@@ -74,7 +64,7 @@ class SignInViewController: UIViewController {
             
             self.topView.center.y = self.topViewCenter.y
             self.bottomView.center.y = self.bottomViewCenter.y
-            self.loginText.alpha = 1
+            self.loginTextView.alpha = 1
             
             }, completion: nil)
     }
@@ -95,43 +85,18 @@ class SignInViewController: UIViewController {
             // Set view properties in here that you want to match with the animation of the keyboard
             // If you need it, you can use the kbSize property above to get the keyboard width and height.
             
-           self.topView.center.y -= self.loginText.image!.size.height
-            self.bottomView.center.y -= kbSize.height
-            self.loginText.alpha = 0
+            self.topView.center.y -= self.loginTextView.image!.size.height
+            self.bottomView.center.y -= kbSize.height - 30
+            self.loginTextView.alpha = 0
             
             }, completion: nil)
     }
     
-    @IBAction func onTap(sender: UITapGestureRecognizer) {
-        view.endEditing(true)
+    @IBAction func didSelectTermsButton(sender: AnyObject) {
+        termsButton.selected = !termsButton.selected
     }
     
-
-    @IBAction func didPressSignInButton(sender: AnyObject) {
-        
-        if emailField.text.isEmpty || passwordField.text.isEmpty {
-            
-            var alertView = UIAlertView(title: "Email Required", message: "Please enter your email address", delegate: self, cancelButtonTitle: "OK")
-            
-            alertView.show()
-            
-        } else {
-            
-            var loadingAlertView = UIAlertView(title: nil, message: "Signin in...", delegate: self, cancelButtonTitle: nil)
-            loadingAlertView.show()
-            
-            delay(2){
-                loadingAlertView.dismissWithClickedButtonIndex(0, animated: true)
-                
-                if self.emailField.text == "tim@thecodepath.com" && self.passwordField.text == "password"{
-                    self.performSegueWithIdentifier("signInSegue", sender: nil)
-                } else {
-                    var alertView = UIAlertView(title: "Sign in Failed", message: "Incorrect email or password", delegate: self, cancelButtonTitle: "OK")
-                    alertView.show()
-                }
-            }
-        }
-    }
+    
     
     /*
     // MARK: - Navigation

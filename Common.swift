@@ -27,3 +27,5 @@ func convertValue(value: Float, r1Min: Float, r1Max: Float, r2Min: Float, r2Max:
     return value * ratio + r2Min - r1Min * ratio
 }
 
+
+

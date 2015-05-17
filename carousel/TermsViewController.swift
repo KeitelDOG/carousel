@@ -1,14 +1,14 @@
 //
-//  ConversationsViewController.swift
+//  TermsViewController.swift
 //  carousel
 //
-//  Created by Jules Walter on 5/14/15.
+//  Created by Jules Walter on 5/16/15.
 //  Copyright (c) 2015 Jules Walter. All rights reserved.
 //
 
 import UIKit
 
-class ConversationsViewController: UIViewController {
+class TermsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +21,9 @@ class ConversationsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func goBack(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)
+    @IBAction func didClickDone(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
-    
 
     /*
     // MARK: - Navigation
