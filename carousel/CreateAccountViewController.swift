@@ -33,7 +33,13 @@ class CreateAccountViewController: UIViewController {
         
         topViewCenter = topView.center
         bottomViewCenter = bottomView.center
-    
+        
+        var defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setBool(false, forKey: "photo_full_screen")
+        defaults.setBool(false, forKey: "swipe_photo")
+        defaults.setBool(false, forKey: "share_photo")
+        defaults.synchronize()
+        
     
     }
     
