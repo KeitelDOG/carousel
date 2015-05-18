@@ -10,10 +10,33 @@ import UIKit
 
 class GetStartedViewController: UIViewController {
 
+    @IBOutlet weak var checkFullScreenButton: UIButton!
+    
+    @IBOutlet weak var swipePhotoButton: UIButton!
+    
+    @IBOutlet weak var sharePhotoButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        var defaults : NSUserDefaults = NSUserDefaults.standardUserDefaults()
         // Do any additional setup after loading the view.
+        
+        var defaults = NSUserDefaults.standardUserDefaults()
+        var photo_full_screen = defaults.boolForKey("photo_full_screen")
+        var swipe_photo = defaults.boolForKey("swipe_photo")
+        var share_photo = defaults.boolForKey("share_photo")
+        defaults.synchronize()
+        
+        if photo_full_screen {
+            checkFullScreenButton.selected = true
+        }
+        if swipe_photo {
+            swipePhotoButton.selected = true
+        }
+        if share_photo {
+            sharePhotoButton.selected = true
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

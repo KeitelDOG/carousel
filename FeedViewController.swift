@@ -28,17 +28,26 @@ class FeedViewController: UIViewController {
         // Do any additional setup after loading the view.
         scrollView.contentSize = feedImageView.image!.size
         
-        var defaults : NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        defaults.setBool(true, forKey: "viewPhotoFullScreen")
+        var defaults = NSUserDefaults.standardUserDefaults()
+        var photo_full_screen = defaults.boolForKey("photo_full_screen")
+        var swipe_photo = defaults.boolForKey("swipe_photo")
+        var share_photo = defaults.boolForKey("share_photo")
         defaults.synchronize()
+        
+        if photo_full_screen && swipe_photo && share_photo {
+            dismissBanner()
+        }
     }
     
     @IBAction func didDismissBanner(sender: AnyObject) {
+        dismissBanner()
+    }
+    
+    func dismissBanner(){
         bannerImageView.alpha = 0
         dismissButton.alpha = 0
         learnMoreButton.alpha = 0
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

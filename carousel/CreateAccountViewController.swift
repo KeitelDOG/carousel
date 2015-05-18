@@ -36,6 +36,11 @@ class CreateAccountViewController: UIViewController {
     
     
     }
+    
+    @IBAction func goBack(sender: AnyObject) {
+        dismissViewControllerAnimated(false, completion: nil)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

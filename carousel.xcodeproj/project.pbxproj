@@ -20,6 +20,7 @@
 		842528711B028812004CE446 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842528701B028812004CE446 /* SignInViewController.swift */; };
 		842528731B029416004CE446 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842528721B029416004CE446 /* TutorialViewController.swift */; };
 		84381FBE1B05B5F700A26198 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84381FBD1B05B5F700A26198 /* CreateAccountViewController.swift */; };
+		84597F151B0990AB005700E5 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84597F141B0990AB005700E5 /* PictureViewController.swift */; };
 		84EC25EF1B05172C0019A036 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC25EE1B05172C0019A036 /* FeedViewController.swift */; };
 		84EC25F11B051D0B0019A036 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC25F01B051D0B0019A036 /* SettingsViewController.swift */; };
 		84EC25F31B051E460019A036 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC25F21B051E460019A036 /* ConversationsViewController.swift */; };
@@ -53,6 +54,7 @@
 		842528701B028812004CE446 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		842528721B029416004CE446 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		84381FBD1B05B5F700A26198 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		84597F141B0990AB005700E5 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		84EC25EE1B05172C0019A036 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = ../FeedViewController.swift; sourceTree = "<group>"; };
 		84EC25F01B051D0B0019A036 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		84EC25F21B051E460019A036 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				8411565E1B00E9FD00A73472 /* AppDelegate.swift */,
 				841156601B00E9FD00A73472 /* ViewController.swift */,
 				841156621B00E9FD00A73472 /* Main.storyboard */,
+				84597F141B0990AB005700E5 /* PictureViewController.swift */,
 				84049FC61B07ECC700D84848 /* GetStartedViewController.swift */,
 				84049FC41B07D66C00D84848 /* TermsViewController.swift */,
 				84381FBD1B05B5F700A26198 /* CreateAccountViewController.swift */,
@@ -251,6 +254,7 @@
 				842528711B028812004CE446 /* SignInViewController.swift in Sources */,
 				842528731B029416004CE446 /* TutorialViewController.swift in Sources */,
 				8425286F1B01C7AA004CE446 /* IntroViewController.swift in Sources */,
+				84597F151B0990AB005700E5 /* PictureViewController.swift in Sources */,
 				84EC25F31B051E460019A036 /* ConversationsViewController.swift in Sources */,
 				84EC25EF1B05172C0019A036 /* FeedViewController.swift in Sources */,
 				84EC25F11B051D0B0019A036 /* SettingsViewController.swift in Sources */,
