@@ -53,6 +53,7 @@ Notes:
 * Learn more about Carousel: When all events are completed, the banner is dismissed on ViewDidLoad (which is not immediate)
 
 Walkthrough of user stories:
+
 ![Video walkthrough](https://s3.amazonaws.com/jules-codepath/jules_carousel.gif)
 
 
