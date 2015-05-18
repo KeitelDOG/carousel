@@ -46,14 +46,13 @@ Optional: Learn more about Carousel
      * [x] Swipe left and right
      * [x] Share a photo
  * [x] Optional: Upon completion of the events, mark them green.
- * [] Optional: When all events are completed, dismiss the banner.
+ * [ ] Optional: When all events are completed, dismiss the banner.
  
-Walkthrough of user stories:
+Notes:
+* Sign In: When the keyboard is visible, I implemented a tap gesture recognizer to dismiss the keyboard instead of a pull on the scroll view.
+* Learn more about Carousel: When all events are completed, the banner is dismissed on ViewDidLoad (which is not immediate)
 
+Walkthrough of user stories:
 ![Video walkthrough](https://s3.amazonaws.com/jules-codepath/jules_carousel.gif)
 
-Notes:
 
-Sign In: When the keyboard is visible, I implemented a tap gesture recognizer to dismiss the keyboard instead of a pull on the scroll view.
-
-Learn more about Carousel: When all events are completed, the banner is dismissed on ViewDidLoad (which is not immediate)
