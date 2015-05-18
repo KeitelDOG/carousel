@@ -53,5 +53,7 @@ Walkthrough of user stories:
 ![Video walkthrough](https://s3.amazonaws.com/jules-codepath/jules_carousel.gif)
 
 Notes:
+
 Sign In: When the keyboard is visible, I implemented a tap gesture recognizer to dismiss the keyboard instead of a pull on the scroll view.
+
 Learn more about Carousel: When all events are completed, the banner is dismissed on ViewDidLoad (which is not immediate)
